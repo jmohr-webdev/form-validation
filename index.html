@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>One Page Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-background">
+          <img src="./img/header.jpg" alt="header" class="header-image" />
+        </div>
+      </header>
+      <div id="success-box">
+        <div id="success" class="success">
+          <span>You have filled in all the fields correctly.</span>
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="info-form" action="">
+          <div class="form-control">
+            <small class="error"></small>
+            <input
+              type="text"
+              id="firstname"
+              class="input input-text"
+              placeholder="First Name"
+              required
+            />
+            <label for="firstname">First Name</label>
+          </div>
+          <div class="form-control">
+            <small class="error"></small>
+            <input
+              type="text"
+              id="lastname"
+              class="input input-text"
+              placeholder="Last Name"
+              required
+            />
+            <label for="lastname">Last Name</label>
+          </div>
+          <div class="form-control">
+            <small class="error"></small>
+            <input
+              type="text"
+              id="phone"
+              class="input input-text"
+              placeholder="Phone"
+              required
+            />
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-control">
+            <span class="required-text">
+              Required to receive an e-mail confirmation
+            </span>
+            <small class="error"></small>
+            <input
+              type="text"
+              id="email"
+              class="input input-text"
+              maxlength="50"
+              placeholder="E-mail"
+              required
+            />
+            <label for="email">E-mail</label>
+          </div>
+          <div class="form-control">
+            <small class="error"></small>
+            <input
+              type="text"
+              id="promo"
+              class="input input-text"
+              placeholder="Promo Code"
+            />
+            <label for="promo">Promo</label>
+          </div>
+          <div class="form-control">
+            <small class="error"></small>
+            <select
+              name="referral-select"
+              id="referral-select"
+              class="input input-select"
+            >
+              <option value="" disabled selected>Select an option...</option>
+              <option value="socialmedia">Social Media</option>
+              <option value="friend">From a friend</option>
+              <option value="email">E-mail</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="referral">How did you hear:</label>
+          </div>
+          <div class="form-control">
+            <small class="error"></small>
+            <textarea
+              name="referral"
+              class="referral"
+              id="referral"
+              class="input input-textarea"
+              placeholder="Please tell us how you heard about us"
+            ></textarea>
+          </div>
+          <div class="form-control checkbox">
+            <div class="terms-container">
+              <input
+                type="checkbox"
+                id="terms"
+                class="input input-checkbox"
+                name="terms"
+                required
+              />
+              <div class="terms-text">
+                <small class="error"></small>
+                <span>
+                  I agree to the
+                  <a id="modal-trigger" href="#terms">terms and conditions</a>
+                  of this event.
+                </span>
+                <label for="terms"> Accept Terms and Conditions </label>
+              </div>
+            </div>
+          </div>
+          <button class="btn submit" type="submit">Continue</button>
+        </form>
+
+        <div class="modal-container" id="modal-container">
+          <div class="modal">
+            <div class="modal-close" id="modal-close">x</div>
+            <div class="terms-and-conditions">
+              <p class="term">
+                All cancellation requests must be received by March 1, 2022
+              </p>
+              <p class="term">
+                All cancellation requests are subject to a $100 cancellation
+                fee.
+              </p>
+              <p class="term">
+                No one under the age of 16 will be allowed on the show floor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          For assistance please call 555-555 or email
+          <a href="mailto:test@test.com">test@test.com</a>
+        </p>
+      </footer>
+    </div>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
