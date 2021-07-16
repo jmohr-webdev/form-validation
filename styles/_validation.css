@@ -1,0 +1,35 @@
+/* ******************* ERROR AND SUCCESS ******************* */
+.error {
+  background-color: var(--main-error-color);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+#success-box {
+  display: none;
+  position: fixed;
+  top: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--success-color);
+  height: 50px;
+  border-radius: 10px;
+}
+
+.success span {
+  font-family: var(--font-regular), sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #fff;
+}

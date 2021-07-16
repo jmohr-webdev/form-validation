@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('./_header.css');
+@import url('./_form.css');
+@import url('./_inputs.css');
+@import url('./_validation.css');
+@import url('./_buttons.css');
+@import url('./_footer.css');
+@import url('./_modal.css');
+@import url('./_mediaqueries.css');
+
+:root {
+  --main-header-color: #ac4a00;
+  --brighter-header-color: #e36200;
+  --light-header-color: #fffbf7;
+  --main-footer-color: #002930;
+  --main-error-color: #b82209;
+  --success-color: #005c03;
+  --off-white: #fffdfc;
+  --font-important: 'Bebas Neue';
+  --font-regular: 'Source Sans Pro';
+}
+
+/* ******************* GLOBALS ******************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-regular), sans-serif;
+  font-size: 12px;
+  color: #444;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--off-white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 80%;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}

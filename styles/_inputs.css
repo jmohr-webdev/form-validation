@@ -1,0 +1,75 @@
+/* ******************* INPUTS ******************* */
+label {
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+input[type='text'],
+select,
+textarea {
+  background-color: var(--off-white);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  max-width: 500;
+}
+
+input[type='text']:focus,
+select:focus,
+textarea {
+  background-color: var(--light-header-color);
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #ac4a00;
+  color: #444;
+}
+
+.input[type='checkbox'] {
+  -webkit-appearance: none;
+  background-image: url('../img/icons8-unchecked-checkbox-30.png');
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+input[type='checkbox']:checked {
+  background-image: url('../img/icons8-checked-checkbox-30.png');
+}
+
+.input[type='checkbox']:active {
+  outline: none;
+}
+
+.required-text {
+  text-align: right;
+  margin: 5px 5px 0 0;
+}
+
+#firstname,
+#lastname {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#email {
+  font-style: italic;
+}
+
+input:required + label::after {
+  content: '*';
+  margin-left: 2px;
+  color: red;
+  font-weight: bold;
+}
+
+#referral {
+  display: none;
+}

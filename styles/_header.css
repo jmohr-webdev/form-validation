@@ -1,0 +1,20 @@
+/* ******************* HEADER ******************* */
+.header-background {
+  background: rgb(0, 41, 48);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 41, 48, 1) 0%,
+    rgba(0, 41, 48, 1) 49%,
+    rgba(172, 74, 0, 1) 50%,
+    rgba(172, 74, 0, 1) 100%
+  );
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+  border-top: 5px solid var(--main-footer-color);
+}
+
+.header-image {
+  width: 100%;
+  filter: grayscale(60%);
+  clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0 80%);
+}

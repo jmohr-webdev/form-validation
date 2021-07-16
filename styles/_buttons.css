@@ -1,0 +1,18 @@
+/* ******************* BUTTONS ******************* */
+.btn.submit {
+  margin-top: 20px;
+  height: 50px;
+  background-color: var(--main-header-color);
+  color: #fff;
+  font-family: var(--font-regular), sans-serif;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in;
+}
+
+.btn.submit:hover {
+  background-color: var(--brighter-header-color);
+}
